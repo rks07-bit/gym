@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eeefe9">
+    <meta name="description" content="A focused weekly strength training plan built for steady progress.">
+    <title>FORMA — Training, with intention</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Forma home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>FORMA<span class="brand-period">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link nav-link-active" href="#routine">My routine</a>
+          <a class="nav-link" href="#progress">Progress</a>
+          <a class="nav-link" href="#principles">The method</a>
+        </nav>
+        <button class="profile-button" type="button" aria-label="Open profile menu">
+          <span class="profile-avatar">J</span>
+          <span class="profile-name">Jordan Lee</span>
+          <span class="profile-chevron" aria-hidden="true">⌄</span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> YOUR TRAINING, CONSIDERED</p>
+            <h1 id="page-title">Show up.<br><span>Get stronger.</span></h1>
+            <p class="hero-description">A little more capable than yesterday. That’s the whole plan.</p>
+            <a class="text-link" href="#routine">Explore your week <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero-art" aria-label="Abstract illustration of a barbell and weight plates">
+            <div class="art-grid"></div>
+            <div class="art-ring art-ring-one"></div>
+            <div class="art-ring art-ring-two"></div>
+            <div class="art-disc art-disc-back"></div>
+            <div class="art-disc art-disc-front"></div>
+            <div class="art-bar"></div>
+            <div class="art-collar"></div>
+            <span class="art-label">BUILT<br>BY REP</span>
+            <span class="art-index">01 — 06</span>
+          </div>
+          <div class="hero-foot">
+            <span>EST. IN THE WORK</span>
+            <span class="hero-foot-rule"></span>
+            <span>YOUR NEXT REP STARTS HERE</span>
+          </div>
+        </section>
+
+        <section class="routine-section" id="routine" aria-labelledby="routine-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> THE WEEKLY SPLIT</p>
+              <h2 id="routine-title">Your routine<span class="heading-period">.</span></h2>
+            </div>
+            <div class="week-note"><span class="week-note-dot"></span> WEEK 04 <span class="week-divider">/</span> BUILD PHASE</div>
+          </div>
+
+          <div class="routine-layout">
+            <aside class="week-sidebar" aria-label="Choose a training day">
+              <p class="sidebar-label">SELECT A DAY</p>
+              <div class="day-list" role="tablist" aria-label="Training days">
+                <button class="day-tab is-active" id="tab-mon" type="button" role="tab" aria-selected="true" aria-controls="day-panel" data-day="mon">
+                  <span class="day-name"><span class="day-index">01</span> Monday</span><span class="day-focus">Upper body</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab" id="tab-tue" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="tue">
+                  <span class="day-name"><span class="day-index">02</span> Tuesday</span><span class="day-focus">Lower body</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab" id="tab-wed" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="wed">
+                  <span class="day-name"><span class="day-index">03</span> Wednesday</span><span class="day-focus">Active recovery</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab" id="tab-thu" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="thu">
+                  <span class="day-name"><span class="day-index">04</span> Thursday</span><span class="day-focus">Push</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab" id="tab-fri" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="fri">
+                  <span class="day-name"><span class="day-index">05</span> Friday</span><span class="day-focus">Pull</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab" id="tab-sat" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="sat">
+                  <span class="day-name"><span class="day-index">06</span> Saturday</span><span class="day-focus">Conditioning</span><span class="day-arrow">↗</span>
+                </button>
+                <button class="day-tab rest-tab" id="tab-sun" type="button" role="tab" aria-selected="false" aria-controls="day-panel" data-day="sun">
+                  <span class="day-name"><span class="day-index">07</span> Sunday</span><span class="day-focus">Rest & reset</span><span class="day-arrow">↗</span>
+                </button>
+              </div>
+              <div class="sidebar-tip">
+                <span class="tip-star">✳</span>
+                <p><strong>Small reminder</strong><br>Rest is part of the work. Take it seriously.</p>
+              </div>
+            </aside>
+
+            <section class="workout-card" id="day-panel" role="tabpanel" aria-labelledby="tab-mon">
+              <div class="workout-header">
+                <div class="workout-title-wrap">
+                  <div class="workout-meta"><span class="workout-day-label">MONDAY / DAY 01</span><span class="workout-tag">STRENGTH</span></div>
+                  <h3 class="workout-title">Upper body</h3>
+                  <p class="workout-subtitle">Strong foundations, one rep at a time.</p>
+                </div>
+                <div class="workout-stat"><span class="stat-value">05</span><span class="stat-label">MOVEMENTS</span></div>
+                <div class="workout-stat"><span class="stat-value">45<span class="stat-unit">′</span></span><span class="stat-label">EST. TIME</span></div>
+              </div>
+
+              <div class="exercise-table">
+                <div class="table-head"><span>EXERCISE</span><span>SETS × REPS</span><span>REST</span><span>DONE</span></div>
+                <div class="exercise-list" aria-live="polite"></div>
+              </div>
+
+              <button class="add-movement-toggle" type="button" aria-expanded="false" aria-controls="add-movement-form">
+                <span aria-hidden="true">＋</span> ADD A MOVEMENT
+              </button>
+              <form class="add-movement-form" id="add-movement-form" hidden>
+                <label>
+                  <span>EXERCISE NAME</span>
+                  <input name="name" type="text" maxlength="48" placeholder="e.g. Goblet squat" required>
+                </label>
+                <label>
+                  <span>SETS × REPS</span>
+                  <input name="sets" type="text" maxlength="20" placeholder="3 × 10" required>
+                </label>
+                <label>
+                  <span>REST</span>
+                  <input name="rest" type="text" maxlength="12" placeholder="60s" required>
+                </label>
+                <div class="add-form-actions">
+                  <button class="add-save-button" type="submit">SAVE MOVEMENT <span aria-hidden="true">↗</span></button>
+                  <button class="add-cancel-button" type="button">CANCEL</button>
+                </div>
+                <p class="add-form-status" role="status"></p>
+              </form>
+
+              <div class="workout-footer">
+                <div class="completion-copy"><span class="completion-icon">↗</span><span class="completion-text">0 of 5 movements complete</span></div>
+                <button class="finish-button" type="button">COMPLETE WORKOUT <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="workout-complete" role="status" hidden>SESSION COMPLETE <span>That’s how progress is made.</span></div>
+            </section>
+          </div>
+        </section>
+
+        <section class="progress-section" id="progress" aria-labelledby="progress-title">
+          <div class="progress-intro">
+            <p class="eyebrow"><span class="eyebrow-line"></span> CONSISTENCY OVER EVERYTHING</p>
+            <h2 id="progress-title">The work<br>adds up<span class="heading-period">.</span></h2>
+            <p>Forget perfect. Focus on showing up, then do it again.</p>
+          </div>
+          <div class="progress-card">
+            <div class="progress-card-top"><span>YOUR MOMENTUM</span><span class="progress-range">LAST 7 DAYS <span>↗</span></span></div>
+            <div class="progress-number"><span id="session-count">3</span><span class="progress-unit"> / 5 SESSIONS</span></div>
+            <div class="progress-track" aria-label="3 of 5 weekly sessions complete"><span class="progress-fill"></span></div>
+            <div class="week-bars" aria-label="Weekly workout activity">
+              <div class="week-bar-item"><span class="week-bar is-done" style="--bar-height: 66%"></span><span>M</span></div>
+              <div class="week-bar-item"><span class="week-bar is-done" style="--bar-height: 88%"></span><span>T</span></div>
+              <div class="week-bar-item"><span class="week-bar is-rest" style="--bar-height: 30%"></span><span>W</span></div>
+              <div class="week-bar-item"><span class="week-bar is-done" style="--bar-height: 78%"></span><span>T</span></div>
+              <div class="week-bar-item"><span class="week-bar is-next" style="--bar-height: 48%"></span><span>F</span></div>
+              <div class="week-bar-item"><span class="week-bar" style="--bar-height: 20%"></span><span>S</span></div>
+              <div class="week-bar-item"><span class="week-bar" style="--bar-height: 20%"></span><span>S</span></div>
+            </div>
+            <p class="progress-caption"><span class="caption-star">✳</span> Your only competition is who you were last week.</p>
+          </div>
+          <div class="streak-note"><span class="streak-number">12</span><span class="streak-label">DAY<br>STREAK</span><span class="streak-spark">✳</span></div>
+        </section>
+
+        <section class="principles-section" id="principles">
+          <div class="principles-label"><span>THE FORMA METHOD</span><span>01—03</span></div>
+          <div class="principle"><span class="principle-number">01</span><h3>Move with intent.</h3><span class="principle-mark">↗</span></div>
+          <div class="principle"><span class="principle-number">02</span><h3>Progress, not perfection.</h3><span class="principle-mark">↗</span></div>
+          <div class="principle"><span class="principle-number">03</span><h3>Strong looks different on everyone.</h3><span class="principle-mark">↗</span></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>FORMA<span class="brand-period">.</span></span></a>
+        <span>MADE FOR THE LONG GAME.</span>
+        <span>© FORMA TRAINING CLUB 2025</span>
+      </footer>
+    </div>
+  </body>
+</html>
